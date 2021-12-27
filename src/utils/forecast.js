@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) =>{
       callback('Please specify a valid location identifier.', undefined);
     } else {
       
-      callback(undefined, `${body.current.weather_descriptions[0]} temperature: ${body.current.temperature} feelslike: ${body.current.feelslike}`);
+      callback(undefined, `${body.current.weather_descriptions[0]} temperature: ${body.current.temperature} feelslike: ${body.current.feelslike} cloudcover: ${body.current.cloudcover}`);
       // (undefined, {
       //   description: body.current.weather_descriptions[0],
       //   temperature: body.current.temperature,
